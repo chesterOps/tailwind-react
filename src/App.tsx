@@ -3,6 +3,7 @@ import Form from "./components/Form";
 import OTPInput from "./components/OTPInput";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { useState } from "react";
+import Accordion from "./components/Accordion";
 
 export default function App() {
   const [OTP, setOTP] = useState("");
@@ -47,6 +48,13 @@ export default function App() {
           Click me
         </Button>
         <OTPInput onChange={(value) => setOTP(value)} />
+        <Accordion
+          data={[
+            { title: "Who is chester?", text: "I don't know who he is" },
+            { title: "Second tab", text: "This is some other text" },
+            { title: "Third tab", text: "This is some other text" },
+          ]}
+        />
       </Form>
     </div>
   );
