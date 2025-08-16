@@ -10,6 +10,20 @@
     "Noto Color Emoji";
 }
 
+@layer utilities {
+  /* Chrome, Safari, Edge */
+  .no-spinner::-webkit-outer-spin-button,
+  .no-spinner::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  /* Firefox + general */
+  .no-spinner {
+    -moz-appearance: textfield;
+    appearance: textfield; /* Tailwind's `appearance-none` also works, but this is explicit */
+  }
+}
+
 :root {
   font-synthesis: none;
   text-rendering: optimizeLegibility;

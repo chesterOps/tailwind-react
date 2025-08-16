@@ -1,8 +1,13 @@
 import Button from "./components/Button";
 import Form from "./components/Form";
+import OTPInput from "./components/OTPInput";
 import { BsEnvelopeFill } from "react-icons/bs";
+import { useState } from "react";
 
 export default function App() {
+  const [OTP, setOTP] = useState("");
+
+  console.log(OTP);
   return (
     <div>
       <Form className="max-w-md mx-auto">
@@ -35,12 +40,13 @@ export default function App() {
         />
         <Button
           type="button"
-          size="lg"
+          size="md"
           icon={<BsEnvelopeFill />}
           className="self-start"
         >
           Click me
         </Button>
+        <OTPInput onChange={(value) => setOTP(value)} />
       </Form>
     </div>
   );

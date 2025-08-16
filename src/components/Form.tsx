@@ -46,7 +46,7 @@ interface IRadio extends React.InputHTMLAttributes<HTMLInputElement> {
 interface IFile extends React.InputHTMLAttributes<HTMLInputElement>, IDefault {}
 
 // Default styles
-const defaultStyles = `w-full disabled:bg-gray-50 disabled:cursor-not-allowed [&.icon]:pl-9 border border-gray-300 [&.error]:border-red-500 p-2.5 rounded-lg placeholder:text-gray-500 outline-none focus:ring-primary focus:border-primary`;
+const defaultStyles = `w-full disabled:bg-gray-50 disabled:cursor-not-allowed [&.icon]:pl-9 border border-gray-300 [&.error]:border-red-500 px-3 py-2.5 rounded-lg placeholder:text-gray-500 outline-none focus:ring-primary focus:border-primary`;
 
 // Form
 function Form({

@@ -6,7 +6,7 @@ interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   iconPos?: "left" | "right";
   loading?: boolean;
   color?: "default" | "outline";
-  size?: "xs" | "sm" | "md" | "lg" | "xl";
+  size?: "xs" | "sm" | "md" | "lg";
   className?: string;
 }
 
@@ -14,9 +14,8 @@ interface IButton extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 const sizes = {
   xs: "px-3 py-2 text-xs [&>svg]:w-3 [&>svg]:h-3",
   sm: "px-3 py-2 text-sm [&>svg]:w-3 [&>svg]:h-3",
-  md: "px-5 py-2.5 text-sm [&>svg]:w-4 [&>svg]:h-4",
-  lg: "px-5 py-3 text-base [&>svg]:w-4 [&>svg]:h-4 [&>svg.spinner]:h-6 [&>svg.spinner]:w-6",
-  xl: "px-6 py-3.5 text-base [&>svg]:w-4 [&>svg]:h-4 [&>svg.spinner]:h-6 [&>svg.spinner]:w-6",
+  md: "px-5 py-[10px] text-base [&>svg]:w-4 [&>svg]:h-4",
+  lg: "px-6 py-3.5 text-base [&>svg]:w-4 [&>svg]:h-4 [&>svg.spinner]:h-6 [&>svg.spinner]:w-6",
 };
 
 // Button colors
