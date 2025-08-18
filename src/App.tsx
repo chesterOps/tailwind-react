@@ -5,6 +5,7 @@ import Accordion from "./components/Accordion";
 import Badge from "./components/Badge";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { useState } from "react";
+import Breadcrumb from "./components/Breadcrumb";
 
 export default function App() {
   const [OTP, setOTP] = useState("");
@@ -61,6 +62,11 @@ export default function App() {
             Default
           </Badge>
           <Badge size="lg">Primary</Badge>
+        </div>
+        <div>
+          <Breadcrumb
+            links={[{ name: "Shop", url: "/shop" }, { name: <h1>Hello</h1> }]}
+          />
         </div>
       </Form>
     </div>
