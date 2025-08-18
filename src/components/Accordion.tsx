@@ -8,7 +8,7 @@ export default function Accordion({
 }) {
   const [active, setActive] = useState<number | undefined>(undefined);
   return (
-    <div className="mb-10 border-gray-300 border overflow-hidden rounded-lg rounded-b-none border-b-0">
+    <div className=" border-gray-300 border overflow-hidden rounded-lg rounded-b-none border-b-0">
       {data.map((dat, index) => (
         <div key={index}>
           <button

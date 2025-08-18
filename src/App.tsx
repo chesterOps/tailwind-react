@@ -1,9 +1,10 @@
 import Button from "./components/Button";
 import Form from "./components/Form";
 import OTPInput from "./components/OTPInput";
+import Accordion from "./components/Accordion";
+import Badge from "./components/Badge";
 import { BsEnvelopeFill } from "react-icons/bs";
 import { useState } from "react";
-import Accordion from "./components/Accordion";
 
 export default function App() {
   const [OTP, setOTP] = useState("");
@@ -55,6 +56,12 @@ export default function App() {
             { title: "Third tab", text: "This is some other text" },
           ]}
         />
+        <div className="flex gap-2 items-center">
+          <Badge size="lg" color="neutral">
+            Default
+          </Badge>
+          <Badge size="lg">Primary</Badge>
+        </div>
       </Form>
     </div>
   );

@@ -106,6 +106,9 @@ const OTPInput = ({ length = 6, onChange, className = "" }: OTPProps) => {
         <input
           key={index}
           type="number"
+          min={0}
+          maxLength={1}
+          max={9}
           className="w-14 h-14 no-spinner text-center border border-gray-300 rounded-lg outline-none focus:ring-primary focus:border-primary"
           value={digit}
           onChange={(e) => handleChange(e.target, index)}
