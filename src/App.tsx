@@ -3,9 +3,11 @@ import Form from "./components/Form";
 import OTPInput from "./components/OTPInput";
 import Accordion from "./components/Accordion";
 import Badge from "./components/Badge";
-import { BsEnvelopeFill } from "react-icons/bs";
+import { BsArrowRight, BsEnvelopeFill } from "react-icons/bs";
 import { useState } from "react";
 import Breadcrumb from "./components/Breadcrumb";
+import Card from "./components/Card";
+import { Link } from "react-router-dom";
 
 export default function App() {
   const [OTP, setOTP] = useState("");
@@ -68,6 +70,25 @@ export default function App() {
             links={[{ name: "Shop", url: "/shop" }, { name: <h1>Hello</h1> }]}
           />
         </div>
+        <Card
+          orientation="vertical"
+          image={
+            <img src="https://fastly.picsum.photos/id/8/5000/3333.jpg?hmac=OeG5ufhPYQBd6Rx1TAldAuF92lhCzAhKQKttGfawWuA" />
+          }
+        >
+          <Link to="">
+            <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              Noteworthy technology acquisitions 2021
+            </h5>
+          </Link>
+          <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            Here are the biggest enterprise technology acquisitions of 2021 so
+            far, in reverse chronological order.
+          </p>
+          <Button size="sm" icon={<BsArrowRight />} iconPos="right">
+            Read more
+          </Button>
+        </Card>
       </Form>
     </div>
   );

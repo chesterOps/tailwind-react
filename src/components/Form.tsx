@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { BiCheck } from "react-icons/bi";
-import { BsChevronDown, BsEye, BsEyeSlash } from "react-icons/bs";
+import { BsChevronDown } from "react-icons/bs";
+import { HiOutlineEye, HiOutlineEyeSlash } from "react-icons/hi2";
 
 // Default interface
 interface IDefault {
@@ -151,10 +152,10 @@ function Password({
         />
         <button
           onClick={() => setShow((s) => !s)}
-          className="cursor-pointer absolute right-2.5 top-1/2 translate-y-[-50%] [&>svg]:w-4 [&>svg]:h-4 [&>svg]:fill-gray-500"
+          className="cursor-pointer absolute right-2.5 top-1/2 translate-y-[-50%] [&>svg]:w-4 [&>svg]:h-4 [&>svg]:text-gray-500"
           type="button"
         >
-          {show ? <BsEyeSlash /> : <BsEye />}
+          {show ? <HiOutlineEyeSlash /> : <HiOutlineEye />}
         </button>
       </div>
       {(error || helper) && (
